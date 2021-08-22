@@ -3,7 +3,7 @@ local Library = {}
 
 function Library:GetColor(color, table)
     table = table or false
-    if (color.R == nil) then return Color3.fromRGB(19, 119, 255) end
+    if (color.R == nil) then return Color3.fromRGB(71, 4, 255) end
 
     local ColorRed = math.round(color.R * 255)
     local ColorGreen = math.round(color.G * 255)
@@ -30,7 +30,7 @@ end
 
 function Library:CreateWindow(title, color)
     title = title or "Bracket Lib V2"
-    color = color and Library:GetColor(color) or Color3.fromRGB(19, 119, 255)
+    color = color and Library:GetColor(color) or Color3.fromRGB(71, 4, 255)
 
     -- Window Main
     local WinTypes = {}
@@ -65,7 +65,7 @@ function Library:CreateWindow(title, color)
 
     outlinecore.Name = "outlinecore"
     outlinecore.Parent = core
-    outlinecore.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+    outlinecore.BackgroundColor3 = Color3.fromRGB(71, 4, 255)
     outlinecore.BorderSizePixel = 0
     outlinecore.Position = UDim2.new(0, 1, 0, 1)
     outlinecore.Size = UDim2.new(0, 538, 0, 529)
@@ -106,7 +106,7 @@ function Library:CreateWindow(title, color)
 
     tabbar.Name = "tabbar"
     tabbar.Parent = inlinecore
-    tabbar.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+    tabbar.BackgroundColor3 = Color3.fromRGB(71, 4, 255)
     tabbar.BorderColor3 = Color3.fromRGB(8, 8, 8)
     tabbar.Size = UDim2.new(0, 521, 0, 25)
 
